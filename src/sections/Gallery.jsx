@@ -19,7 +19,7 @@ export default function DiagonalSection() {
     repeatType: "mirror",
     ease: "easeInOut",
   }}
-              className="skew-x-12 space-y-6"
+              className="skew-x-12 space-y-6 will-change-transform transform-gpu"
             >
               <img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqS5mbq_KJtMlaUaJr8ZKrb-1Y0HL8eUieDQ&s" className="w-[80%] mx-auto rounded-xl shadow-lg" />
               <img src="https://plus.unsplash.com/premium_photo-1661611489843-d9745676b52b?fm=jpg&q=60&w=3000&auto=format&fit=crop" className="w-[80%] mx-auto rounded-xl shadow-lg" />
@@ -42,7 +42,7 @@ export default function DiagonalSection() {
     repeatType: "mirror",
     ease: "easeInOut",
   }}
-              className="skew-x-12 space-y-6"
+              className="skew-x-12 space-y-6 will-change-transform transform-gpu"
             >
               <img src="https://images.unsplash.com/photo-1606761568499-6d2451b23c66?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" className="w-[80%] mx-auto rounded-xl shadow-lg" />
               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqS5mbq_KJtMlaUaJr8ZKrb-1Y0HL8eUieDQ&s" className="w-[80%] mx-auto rounded-xl shadow-lg" />

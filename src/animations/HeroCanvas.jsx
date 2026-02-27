@@ -7,7 +7,7 @@ import * as THREE from "three"
 function AutoCamera() {
   useFrame((state) => {
     const t = state.clock.getElapsedTime()
-    state.camera.position.x = Math.sin(t * 0.2) * 1.5
+    state.camera.position.x = Math.sin(t * 0.15) * 1.2
     state.camera.position.z = 9 + Math.sin(t * 0.3) * 0.5
     state.camera.lookAt(0, 0, 0)
   })
@@ -47,7 +47,7 @@ function Network() {
 
   const points = useMemo(() => {
     const pts = []
-    for (let i = 0; i < 200; i++) {
+    for (let i = 0; i < 120; i++) {
       pts.push(
         new THREE.Vector3(
           (Math.random() - 0.5) * 18,
@@ -94,7 +94,7 @@ function Particles() {
   const pointsRef = useRef()
 
   const particles = useMemo(() => {
-    const arr = new Float32Array(1000)
+    const arr = new Float32Array(600)
     for (let i = 0; i < 1000; i++) {
       arr[i] = (Math.random() - 0.5) * 20
     }
@@ -148,6 +148,7 @@ function CenterLogo() {
 }
 
 /* 🎬 MAIN HERO CANVAS */
+
 export default function HeroCanvas({ bgIndex = 0 }) {
   const gradients = [
     "from-indigo-900 via-slate-900 to-black",
@@ -161,27 +162,20 @@ export default function HeroCanvas({ bgIndex = 0 }) {
     <div
       className={`w-full h-full bg-gradient-to-br transition-all duration-1000 ${activeGradient}`}
     >
-      <Canvas camera={{ position: [0, 0, 9], fov: 50 }}>
+      <Canvas
+        camera={{ position: [0, 0, 9], fov: 50 }}
+        dpr={[1, 1.5]}                 // 🔥 Limit pixel ratio
+        gl={{
+          antialias: window.innerWidth > 768,  // 🔥 Disable AA on mobile
+          powerPreference: "high-performance",
+        }}
+        performance={{ min: 0.5 }}     // 🔥 Reduce GPU stress
+      >
         <ambientLight intensity={0.6} />
-        <directionalLight position={[5, 5, 5]} intensity={2} />
+        <directionalLight position={[5, 5, 5]} intensity={1.5} />
 
         <AutoCamera />
         <CenterLogo />
-
-        {/* <FloatingBook
-          position={[-4, 1.5, -1]}
-          color="#4f46e5"
-        />
-        <FloatingBook
-          position={[4, -1.5, 0]}
-          color="#9333ea"
-        /> */}
-        {/* <FloatingBook
-          position={[0, 3, -2]}
-          color="#2563eb"
-        /> */}
-        
-
         <Network />
         <Particles />
       </Canvas>
