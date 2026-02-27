@@ -1,12 +1,11 @@
 import { useEffect, useRef } from "react";
 import HeroCanvas from "../animations/HeroCanvas";
 
-const images = [
-  "https://plus.unsplash.com/premium_photo-1713296255442-e9338f42aad8",
-  "https://images.unsplash.com/photo-1607237138185-eedd9c632b0b?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29sbGVnZSUyMGNhbXB1c3xlbnwwfHwwfHx8MA%3D%3D",
-  "https://images.unsplash.com/photo-1564981797816-1043664bf78d",
-  "https://images.unsplash.com/photo-1521587760476-6c12a4b040da",
-];
+import img1 from "/assets/top-header/1.jpg";
+import img2 from "/assets/top-header/2.jpg";
+import img3 from "/assets/top-header/3.jpg";
+
+const images = [img1, img2, img3];
 
 export default function Hero() {
   const stackRef = useRef(null);

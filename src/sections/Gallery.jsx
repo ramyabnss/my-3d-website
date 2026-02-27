@@ -21,16 +21,16 @@ export default function DiagonalSection() {
   }}
               className="skew-x-12 space-y-6 will-change-transform transform-gpu"
             >
-              <img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqS5mbq_KJtMlaUaJr8ZKrb-1Y0HL8eUieDQ&s" className="w-[80%] mx-auto rounded-xl shadow-lg" />
-              <img src="https://plus.unsplash.com/premium_photo-1661611489843-d9745676b52b?fm=jpg&q=60&w=3000&auto=format&fit=crop" className="w-[80%] mx-auto rounded-xl shadow-lg" />
-              <img src="https://plus.unsplash.com/premium_photo-1664299728921-02e66e6146b4?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dW5pdmVyc2l0eSUyMGNhbXB1c3xlbnwwfHwwfHx8MA%3D%3D" className="w-[80%] mx-auto rounded-xl shadow-lg" />
+              <img  src="./assets/gallery/1.jpg" className="w-[80%] mx-auto rounded-xl shadow-lg" />
+              <img src="./assets/gallery/2.jpg" className="w-[80%] mx-auto rounded-xl shadow-lg" />
+              <img src="./assets/gallery/3.jpg" className="w-[80%] mx-auto rounded-xl shadow-lg" />
             </motion.div>
 
             {/* COLUMN 2 - STATIC */}
             <div className="skew-y-6 space-y-6">
-              <img src="https://plus.unsplash.com/premium_photo-1733342472892-a877e65af289?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8dW5pdmVyc2l0eSUyMHN0dWRlbnRzfGVufDB8fDB8fHww" className="w-[80%] mx-auto rounded-xl shadow-lg" />
-              <img src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y29sbGVnZSUyMGxpYnJhcnl8ZW58MHx8MHx8fDA%3D" className="w-[80%] mx-auto rounded-xl shadow-lg" />
-              <img src="https://images.unsplash.com/photo-1541829070764-84a7d30dd3f3?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" className="w-[80%] mx-auto rounded-xl shadow-lg" />
+              <img src="./assets/gallery/4.jpg" className="w-[80%] mx-auto rounded-xl shadow-lg" />
+              <img src="./assets/gallery/5.jpg" className="w-[80%] mx-auto rounded-xl shadow-lg" />
+              <img src="./assets/gallery/6.jpg" className="w-[80%] mx-auto rounded-xl shadow-lg" />
             </div>
 
             {/* COLUMN 3 - MOVE DOWN */}
@@ -44,9 +44,9 @@ export default function DiagonalSection() {
   }}
               className="skew-x-12 space-y-6 will-change-transform transform-gpu"
             >
-              <img src="https://images.unsplash.com/photo-1606761568499-6d2451b23c66?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" className="w-[80%] mx-auto rounded-xl shadow-lg" />
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqS5mbq_KJtMlaUaJr8ZKrb-1Y0HL8eUieDQ&s" className="w-[80%] mx-auto rounded-xl shadow-lg" />
-              <img src="https://images.unsplash.com/photo-1501503069356-3c6b82a17d89?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" className="w-[80%] mx-auto rounded-xl shadow-lg" />
+              <img src="./assets/gallery/7.jpg" className="w-[80%] mx-auto rounded-xl shadow-lg" />
+              <img src="./assets/gallery/8.jpg" className="w-[80%] mx-auto rounded-xl shadow-lg" />
+              <img src="./assets/gallery/1.jpg" className="w-[80%] mx-auto rounded-xl shadow-lg" />
             </motion.div>
 
           </div>

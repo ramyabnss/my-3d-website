@@ -39,7 +39,7 @@ export default function About() {
           {/* TOP BIG */}
           <img
             ref={el => imagesRef.current[0] = el}
-            src="https://images.unsplash.com/photo-1535463731090-e34f4b5098c5?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bmF0dXJhbCUyMHdhdGVyfGVufDB8fDB8fHww"
+            src="./assets/about/1.jpg"
             alt=""
             className="h-[420px] w-full object-cover rounded-2xl shadow-xl"
           />
@@ -47,7 +47,7 @@ export default function About() {
           {/* TOP SMALL */}
           <img
             ref={el => imagesRef.current[1] = el}
-            src="https://images.unsplash.com/photo-1528605248644-14dd04022da1"
+            src="./assets/about/2.jpg"
             alt=""
             className="h-[300px] w-full object-cover rounded-2xl shadow-xl mt-20"
           />
@@ -55,7 +55,7 @@ export default function About() {
           {/* BOTTOM SMALL */}
           <img
             ref={el => imagesRef.current[2] = el}
-            src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4"
+            src="./assets/about/3.jpg"
             alt=""
             className="h-[300px] w-full object-cover rounded-2xl shadow-xl"
           />
@@ -63,7 +63,7 @@ export default function About() {
           {/* BOTTOM BIG */}
           <img
             ref={el => imagesRef.current[3] = el}
-            src="https://images.unsplash.com/photo-1518949396226-d2cd9ab6889e?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bmF0dXJlJTIwYnJpZ2h0fGVufDB8fDB8fHww"
+            src="./assets/about/4.jpg"
             alt=""
             className="h-[420px] w-full object-cover rounded-2xl shadow-xl -mt-10"
           />

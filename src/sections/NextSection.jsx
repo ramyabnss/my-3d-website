@@ -77,7 +77,7 @@ export default function NextSection() {
       className="relative min-h-screen bg-fixed bg-center bg-cover bg-no-repeat py-28 px-6"
       style={{
         backgroundImage:
-          "url(https://images.unsplash.com/photo-1562774053-701939374585)",
+          "url(./assets/full-page.jpg)",
       }}
     >
       <div className="max-w-7xl mx-auto bg-black/60 backdrop-blur-sm p-12 rounded-3xl">
@@ -95,7 +95,7 @@ export default function NextSection() {
           {/* Image */}
           <img
             ref={imageRef}
-            src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f"
+            src="./assets/img.jpg"
             alt=""
             className="rounded-3xl shadow-2xl w-full h-[400px] object-cover"
           />

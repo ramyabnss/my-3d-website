@@ -51,7 +51,7 @@ export default function CampusLifePinned() {
         className="absolute inset-0 flex items-center justify-center"
       >
         <img
-          src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZWR1Y2F0aW9ufGVufDB8fDB8fHww"
+          src="./assets/campus-life/academic-excellence.jpg"
           className="absolute inset-0 w-full h-full object-cover"
           alt=""
         />
@@ -68,7 +68,7 @@ export default function CampusLifePinned() {
         className="absolute inset-0 flex items-center justify-center"
       >
         <img
-          src="https://plus.unsplash.com/premium_photo-1691962725028-e825955a7c1e?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y2FtcHVzJTIwc3R1ZGVudHN8ZW58MHx8MHx8fDA%3D"
+          src="./assets/campus-life/vibrant-campus.jpg"
           className="absolute inset-0 w-full h-full object-cover"
           alt=""
         />
@@ -86,7 +86,7 @@ export default function CampusLifePinned() {
         className="absolute inset-0 flex items-center justify-center"
       >
         <img
-          src="https://images.unsplash.com/photo-1564981797816-1043664bf78d"
+          src="./assets/campus-life/global-opportunities.jpg"
           className="absolute inset-0 w-full h-full object-cover"
           alt=""
         />
