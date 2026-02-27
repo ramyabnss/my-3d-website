@@ -7,8 +7,8 @@ import * as THREE from "three"
 function AutoCamera() {
   useFrame((state) => {
     const t = state.clock.getElapsedTime()
-    state.camera.position.x = Math.sin(t * 0.15) * 1.2
-    state.camera.position.z = 9 + Math.sin(t * 0.3) * 0.5
+    state.camera.position.x = Math.sin(t * 0.1) * 1
+    state.camera.position.z = 9 + Math.sin(t * 0.15) * 0.3
     state.camera.lookAt(0, 0, 0)
   })
   return null
@@ -117,7 +117,7 @@ function Particles() {
           itemSize={3}
         />
       </bufferGeometry>
-      <pointsMaterial size={0.05} color="#ffffff" />
+      <pointsMaterial size={0.06} color="#ffffff" />
     </points>
   )
 }
@@ -135,7 +135,7 @@ function CenterLogo() {
 
   return (
     <mesh ref={meshRef}>
-      <torusGeometry args={[1.2, 0.3, 32, 100]} />
+      <torusGeometry args={[1.2, 0.3, 16, 60]} />
       <meshStandardMaterial
         color="#ffffff"
         metalness={1}
@@ -150,6 +150,7 @@ function CenterLogo() {
 /* 🎬 MAIN HERO CANVAS */
 
 export default function HeroCanvas({ bgIndex = 0 }) {
+
   const gradients = [
     "from-indigo-900 via-slate-900 to-black",
     "from-emerald-800 via-teal-900 to-black",
@@ -157,19 +158,19 @@ export default function HeroCanvas({ bgIndex = 0 }) {
   ]
 
   const activeGradient = gradients[bgIndex]
+  const isMobile = window.innerWidth < 768
 
   return (
     <div
-      className={`w-full h-full bg-gradient-to-br transition-all duration-1000 ${activeGradient}`}
+      className={`w-full h-full bg-gradient-to-br transition-all duration-1000 will-change-transform ${activeGradient}`}
     >
       <Canvas
         camera={{ position: [0, 0, 9], fov: 50 }}
-        dpr={[1, 1.5]}                 // 🔥 Limit pixel ratio
+        dpr={[1, 1.3]}
         gl={{
-          antialias: window.innerWidth > 768,  // 🔥 Disable AA on mobile
+          antialias: !isMobile,
           powerPreference: "high-performance",
         }}
-        performance={{ min: 0.5 }}     // 🔥 Reduce GPU stress
       >
         <ambientLight intensity={0.6} />
         <directionalLight position={[5, 5, 5]} intensity={1.5} />
@@ -177,7 +178,8 @@ export default function HeroCanvas({ bgIndex = 0 }) {
         <AutoCamera />
         <CenterLogo />
         <Network />
-        <Particles />
+        {!isMobile && <Particles />}
+
       </Canvas>
     </div>
   )
